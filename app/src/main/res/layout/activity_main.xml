@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".View.view.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_sendfile"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#13c41c"
+        app:popupTheme="@android:style/ThemeOverlay.Material.Light"
+        app:theme="@android:style/ThemeOverlay.Material.Dark"
+        app:title="智能花园"/>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#13c41c"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="空气"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/line"/>
+
+        <RadioGroup
+            android:id="@+id/navi_radiogroupofair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#13c41c"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="4dp">
+
+            <RadioButton
+                android:id="@+id/betton_airtemp"
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_abc_image_temp"
+                android:gravity="center"
+                android:text="温度"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+            <RadioButton
+                android:id="@+id/betton_airhump"
+                android:layout_width="0dp"
+                android:layout_height="68dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/ic_abc_image_hump"
+                android:gravity="center"
+                android:text="湿度"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#13c41c"
+            android:text="控制"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/line"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radiobutton_fengsan_controler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selecter_fengsan"/>
+
+            <RadioButton
+                android:id="@+id/radiobutton_water_controler"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selecter_water"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
